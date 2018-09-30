@@ -1,0 +1,11 @@
+<p>
+
+
+</p>
+<form #form="ngForm" (submit)="onSubmit()">
+  <input type="text" [(ngModel)]="user.name" name="name" required/>
+  <input type="text" [(ngModel)]="user.surname" name="surname" required/>
+  <input type="text" [(ngModel)]="user.skill" name="skill" required/>
+
+  <input type="submit" value="submit">
+</form>
